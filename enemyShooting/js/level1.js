@@ -171,6 +171,7 @@ Game.Level1.prototype = {
     collisionBullet: function(bullet, enemy) {
         explosionSound.play();
         explosion.x = bullet.x;
+        explosion.y = bullet.y;
         explosion.start(true, 200, null, 1);
         bullet.kill();
         enemy.kill();
